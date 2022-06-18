@@ -51,7 +51,7 @@ By : ${chalk.bold('xDast#8745')} - Credit : @dkmpostor & @Eskey
       const crown = data.User.Crowns;
 
 console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.white(`User : ${username}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
-      await sleep(7250);
+      await sleep(6777);
 
     } else if (result == 'BANNED') {
       break;
