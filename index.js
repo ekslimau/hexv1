@@ -39,7 +39,7 @@ By : ${chalk.bold('xDast#8745')} - Credit : @dkmpostor & @Eskey
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Authentication Code Not VALID!!`));
+      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Authentication Code Not Valid`));
       break;
 
     } else if (result.includes('User')) {
@@ -51,10 +51,10 @@ By : ${chalk.bold('xDast#8745')} - Credit : @dkmpostor & @Eskey
       const crown = data.User.Crowns;
 
 console.log(chalk.bgBlack(`\r[ ${moment().format('HH:mm:ss')} ] ${chalk.white(`User : ${username}`)} | ${chalk.yellow(`Trophy : ${trophy}`)} | ${chalk.red(`Crown : ${crown}`)}`));
-      await sleep(7000);
+      await sleep(7250);
 
     } else if (result == 'BANNED') {
-      console.log(chalk.bgRed(`Your Account has been BANNED!!`));
+      console.log(chalk.bgRed(`Your Account has been Banned`));
      break;
     }
   }
