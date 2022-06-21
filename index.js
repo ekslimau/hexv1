@@ -39,9 +39,6 @@ By : ${chalk.bold('xDast#8745')} - Credit : @dkmpostor & @Eskey
     const result = await GoStumble(auth);
     if (!result) {
 
-      console.log(chalk.red(`\r[ ${moment().format('HH:mm:ss')} ] Authentication Code Not Valid`));
-      break;
-
     } else if (result.includes('User')) {
 
       const data = JSON.parse(result);
